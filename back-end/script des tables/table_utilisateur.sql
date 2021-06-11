@@ -1,14 +1,3 @@
-DROP TABLE `waz_utilisateur`;
-
-CREATE TABLE `waz_utilisateur` (
-  `id` mediumint(8) unsigned NOT NULL auto_increment,
-  `util_nom` varchar(255) default NULL,
-  `util_prenom` varchar(255) default NULL,
-  `util_tel` varchar(100) default NULL,
-  `util_mail` varchar(255) default NULL,
-  `util_passeword` varchar(255),
-  PRIMARY KEY (`id`)
-) AUTO_INCREMENT=1;
 
 INSERT INTO `waz_utilisateur` (`util_nom`,`util_prenom`,`util_tel`,`util_mail`,`util_passeword`) VALUES ("Stephenson","Harding","222-4888","orci@Fuscealiquet.com","BRY84LSG0IF"),("Castro","Akeem","757-4577","dictum.mi@maurisblandit.co.uk","UGY82BTP6DJ"),("Terrell","Vladimir","989-1706","Ut.semper.pretium@loremeget.co.uk","URO09HBO6CY"),("Jarvis","Tanisha","545-6747","turpis.vitae.purus@mi.org","XME26WIU7EN"),("Weeks","Kirestin","422-3053","gravida.Aliquam.tincidunt@nonantebibendum.edu","RJF77NSD0IZ"),("Howard","Kameko","1-782-930-4230","tellus@quistristique.ca","ORX70CNL1OG"),("Bullock","Fay","551-0934","mauris@in.org","MAO08MZQ0EC"),("Hammond","Mannix","1-978-846-1048","cursus@Duiselementumdui.com","UHL28XBO4UG"),("Watson","Harding","1-386-459-9468","erat.volutpat.Nulla@sociis.ca","NCC14HMU9ST"),("Cervantes","Yuli","1-493-644-1196","enim.Etiam.imperdiet@vulputateposuerevulputate.edu","AZT56FKB0PP");
 INSERT INTO `waz_utilisateur` (`util_nom`,`util_prenom`,`util_tel`,`util_mail`,`util_passeword`) VALUES ("Mueller","Alana","1-854-529-9328","Sed@loremfringilla.org","AXY81TAS4RL"),("Stephenson","Zeus","1-218-895-4614","turpis.egestas@mattisornarelectus.edu","NHD26XPM4FW"),("Harper","Alexander","690-7406","elit.erat@a.co.uk","MWN33HDW7OR"),("Schneider","Wayne","233-7662","cursus.et.eros@perconubia.co.uk","ZFS08RXL8LR"),("Bruce","Jelani","524-5955","felis.orci@arcuiaculisenim.edu","RIF36CKD5NH"),("Haynes","Joshua","107-7362","a.magna@nec.ca","AJH11KZU5IK"),("Case","Shellie","594-2570","bibendum.fermentum@arcuac.co.uk","YPJ81RNU2WB"),("Pittman","Magee","1-885-174-9775","purus.Duis@risus.org","LMQ66GQS9RD"),("Jordan","Ila","1-618-773-7219","quis@Suspendissealiquet.ca","VLH41CPC1FG"),("Sutton","Mara","1-418-822-9675","malesuada.fames.ac@Nam.com","CKV99HOM5SZ");

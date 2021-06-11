@@ -1,17 +1,3 @@
-DROP TABLE `waz_agent`;
-
-CREATE TABLE `waz_agent` (
-  `id` mediumint(8) unsigned NOT NULL auto_increment,
-  `agent_nom` varchar(255) default NULL,
-  `agent_prenom` varchar(255) default NULL,
-  `agent_mail` varchar(255) default NULL,
-  `agent_login` varchar(255) default NULL,
-  `agent_passeword` varchar(255),
-  `agent_d_inscr` varchar(255),
-  `agent_d_decon` varchar(255),
-  `agent_d_ajout` varchar(255),
-  PRIMARY KEY (`id`)
-) AUTO_INCREMENT=1;
 
 INSERT INTO `waz_agent` (`agent_nom`,`agent_prenom`,`agent_mail`,`agent_login`,`agent_passeword`,`agent_d_inscr`,`agent_d_decon`,`agent_d_ajout`) VALUES ("Charles","Kent","iaculis@tempusloremfringilla.com","William, Dylan U.","AFT83IZP4IT","23/09/2020","09/06/2021","25/12/2021"),("Blossom","Hester","sollicitudin.orci@nulla.edu","Gallegos, Uta G.","VGX32RMU2UC","10/09/2021","31/07/2021","15/01/2022"),("Ignacia","Mccall","enim@lobortisnisi.net","Fowler, Ryan J.","KKT01RHQ3DE","03/05/2022","28/09/2021","15/08/2021"),("Kendall","Steele","magna.Suspendisse.tristique@QuisquevariusNam.co.uk","Duran, Dakota B.","KZZ30BSI9BS","20/08/2021","25/04/2021","05/09/2020"),("Isaac","Dominguez","Pellentesque@vulputateullamcorper.com","Valdez, Shafira D.","OMF87BYV0EC","01/02/2021","10/08/2020","29/08/2020"),("Donovan","Gibson","ornare.elit@ultrices.org","Larsen, Jane F.","ECI08BGC5XP","21/10/2020","29/04/2022","30/10/2020"),("Cally","Crane","urna.nec.luctus@metus.edu","Vance, Amery C.","GMF25QKY7SJ","23/09/2020","04/04/2022","28/11/2021"),("Zena","Galloway","adipiscing.ligula.Aenean@quispedePraesent.co.uk","Henry, Eden Q.","QXD57TSU1HL","29/12/2021","02/01/2021","15/04/2022"),("Hall","Waters","Proin.mi@nisinibh.co.uk","Buckner, Yoshi C.","CMQ83FFL2UH","09/08/2021","27/12/2020","05/04/2022"),("Melvin","Osborne","ullamcorper@atvelit.co.uk","Lee, Erica D.","GVS65NSF5FH","17/03/2022","02/11/2021","07/06/2021");
 INSERT INTO `waz_agent` (`agent_nom`,`agent_prenom`,`agent_mail`,`agent_login`,`agent_passeword`,`agent_d_inscr`,`agent_d_decon`,`agent_d_ajout`) VALUES ("Riley","Ellison","neque@ultriciesornare.org","Cochran, Serina S.","MQE70QCL6JP","26/03/2021","30/09/2021","21/12/2020"),("Murphy","Watson","dictum.eleifend@luctus.org","Cash, Haviva L.","DFO90IWH2OC","14/02/2021","03/10/2021","11/11/2021"),("Hiram","Mathews","urna.justo.faucibus@malesuadaInteger.ca","Moreno, Debra N.","YTB81RLZ5TM","01/09/2021","26/04/2022","15/11/2020"),("Keely","Parks","cursus.luctus@Nullafacilisis.org","Cummings, Trevor J.","THC32HVC2NY","21/08/2021","12/11/2020","27/08/2021"),("Hannah","Burke","Curae.Donec@arcuVivamus.org","Weber, Margaret D.","XJY87UJC0DC","12/02/2021","29/01/2022","08/06/2021"),("Olga","Lang","adipiscing.lacus.Ut@orcitincidunt.org","Maddox, Stacy P.","SHQ06RDM3YA","27/01/2021","13/05/2022","19/09/2021"),("Oleg","Pratt","sagittis.Duis.gravida@eleifendnec.ca","Kane, Elton S.","CSP01JQG4EM","20/08/2020","23/09/2021","24/08/2021"),("Uriel","Lynch","neque.Morbi.quis@dictummagnaUt.edu","Washington, Dustin L.","XKJ88MNX9HU","07/04/2021","03/09/2020","16/01/2021"),("Michael","Shaw","ligula.tortor.dictum@mattis.ca","Spence, Berk O.","FWW85YUQ8LJ","29/10/2021","11/04/2021","16/11/2021"),("Gemma","Lindsay","Cras.interdum.Nunc@Fusce.com","Haley, Callie X.","NBO66AJM7DT","03/04/2021","05/04/2022","26/06/2020");
