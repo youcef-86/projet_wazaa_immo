@@ -38,16 +38,15 @@
                 </ul>
 
                 <!-- <input type="button" value="Connexion"> -->
-                <div>
-                    <a class="btn btn-outline-secondary" href="<?php echo site_url("Home/connect"); ?>"><strong>Connexion</strong></a
-                </div>
-                <div>
+                <?php if($this->session->userdata('logged_in') == true) : ?>
                     <a class="btn btn-outline-secondary" href="<?php echo site_url("Users/logout"); ?>"><strong>Déconnexion</strong></a>
-                </div> 
+                <?php else : ?>
+                    <a class="btn btn-outline-secondary" href="<?php echo site_url("Home/connect"); ?>"><strong>Connexion</strong></a
+                <?php endif; ?>
             </div>
         </nav>
+
+        
     </header>
-<!-- image promo -->
-<img class="mw-auto" height="120" width="100%" src="<?php echo base_url("assets/IMG/wazaa-.jpg"); ?>" alt="promo" title="promotion">
-   
+
         

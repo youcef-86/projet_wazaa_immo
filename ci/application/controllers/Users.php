@@ -61,13 +61,12 @@ class Users extends CI_Controller
 
 
             //login user
-            $this->load->model('ConnexionModel');
+            $this->load->model('UserModel');
             $user_id = $this->UserModel->connexion($email, $password);
 
             if ($user_id) {
                 //create session
                 $user_data = array(
-                    'user_id' => $user_id,
                     'email' => $email,
                     'logged_in' => true
                 );
@@ -92,10 +91,13 @@ class Users extends CI_Controller
     public function logout()
     {
         // unset user data
-        $this->sessions->unset_userdata('logged_in');
-        $this->sessions->unset_userdata('user_id');
-        $this->sessions->unset_userdata('email');
+        $user_data = array(         //remplacer par un userdata vide pour quil garde pas ce qui a deja en memoire lea session de connexion
+            'email' => '',
+            'logged_in' => false
+        );
 
+        $this->session->set_userdata($user_data);
+       
         // set message
         $this->session->set_flashdata('user_loggedout', 'Vous êtes déconnecté');
 

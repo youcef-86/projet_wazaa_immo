@@ -42,26 +42,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
         //vérifier si le pseudo existe
-        public function check_pseudo_exists($pseudo)
-        {
-            $query = $this->db->get_where('waz_users', array('us_pseudo' => $pseudo));
-            if (empty($query->row_array())) {
-                return true;
-            } else {
-                return false;
-            }
-        }
+        // public function check_pseudo_exists($pseudo)
+        // {
+        //     $query = $this->db->get_where('waz_users', array('us_pseudo' => $pseudo));
+        //     if (empty($query->row_array())) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
 
         //vérifier si l'email' existe
-        public function check_email_exists($email)
-        {
-            $query = $this->db->get_where('waz_users', array('us_email' => $email));
-            if (empty($query->row_array())) {
-                return true;
-            } else {
-                return false;
-            }
-        }
+        // public function check_email_exists($email)
+        // {
+        //     $query = $this->db->get_where('waz_users', array('us_email' => $email));
+        //     if (empty($query->row_array())) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
     }
 
 

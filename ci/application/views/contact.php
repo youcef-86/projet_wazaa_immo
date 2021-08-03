@@ -1,4 +1,8 @@
 
+<!-- image promo -->
+<img class="mw-auto" height="120" width="100%" src="<?php echo base_url("assets/IMG/wazaa-.jpg"); ?>" alt="promo" title="promotion">
+   
+
 <div class="p-2 ml-5 mr-5 text-center">
     <h4 class="text-center">Nous Contacter</h4>
     <hr>

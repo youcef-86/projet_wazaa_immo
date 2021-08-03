@@ -1,3 +1,7 @@
+ <!-- image promo -->
+<img class="mw-auto" height="120" width="100%" src="<?php echo base_url("assets/IMG/wazaa-.jpg"); ?>" alt="promo" title="promotion">
+   
+
  <body>
     <div id="rein1">
         <h4>REINITIALISER LE MOT DE PASSE</h4>

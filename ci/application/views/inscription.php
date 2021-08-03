@@ -1,3 +1,7 @@
+<!-- image promo -->
+<img class="mw-auto" height="120" width="100%" src="<?php echo base_url("assets/IMG/wazaa-.jpg"); ?>" alt="promo" title="promotion">
+   
+
 <div id="bloc">
     <h2 class="text-center p-2">Créer un compte</h2>
     <hr>
