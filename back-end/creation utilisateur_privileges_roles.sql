@@ -34,45 +34,68 @@ GRANT ALL
 ON wazaaimmo.* 
 TO wazaaimmo_developpeur;
 
+-- table agent --
 GRANT SELECT, INSERT
 ON wazaaimmo.waz_agent 
 TO wazaaimmo_administrateur;
 
+REVOKE UPDATE, DELETE
+ON wazaaimmo.waz_agent 
+FROM wazaaimmo_administrateur;
+
+-- table annonce --
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON wazaaimmo.waz_annonce 
 TO wazaaimmo_administrateur;
 
+-- table vente --
 GRANT SELECT, INSERT, UPDATE
 ON wazaaimmo.waz_vente 
 TO wazaaimmo_administrateur;
 
+REVOKE DELETE
+ON wazaaimmo.waz_vente 
+FROM wazaaimmo_administrateur;
+
+-- table location --
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON wazaaimmo.waz_location 
 TO wazaaimmo_administrateur;
 
+-- table logement --
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON wazaaimmo.waz_logement 
 TO wazaaimmo_administrateur;
 
+-- table photos --
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON wazaaimmo.waz_photos 
 TO wazaaimmo_administrateur;
 
+-- table options --
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON wazaaimmo.waz_options
 TO wazaaimmo_administrateur;
 
+-- table quartier --
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON wazaaimmo.waz_quartier 
 TO wazaaimmo_administrateur;
 
+-- table commune --
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON wazaaimmo.waz_commune
 TO wazaaimmo_administrateur;
 
+-- table prospects --
 GRANT SELECT, INSERT, UPDATE
 ON wazaaimmo.waz_prospects 
 TO wazaaimmo_administrateur;
+
+REVOKE DELETE
+ON wazaaimmo.waz_prospects 
+FROM wazaaimmo_administrateur;
+
 
 
                       -- affectation du rôle à un utilisateur
